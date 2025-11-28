@@ -11,14 +11,33 @@ const experiences = [
     title: "Full-Stack Developer",
     company: "Live!",
     period: "07/2024 - 02/2025",
-    description: "Built and maintained multiple enterprise applications using Java Spring Boot and React."
+    description: `Contributed to the development and maintenance of the production system that served all 
+      internal business areas (with the help of Systêxtil ERP). Developed customizations within Systêxtil ERP.
+      Led the integration of the Azure AI-powered captioning service and the outsourced sewing management system (GERFAC).`,
+  },
+  {
+    title: "Online Shopper in Australia",
+    company: "Woolworths Sydney",
+    period: "02/2024 - 07/2024",
+    description: "IT non-related // Personal shopping for Woolies customers.",
   },
   {
     title: "Full-Stack Developer",
     company: "WEG",
-    period: "02/2017 - 12/2023",
-    description: "Developed RESTful APIs and responsive web applications."
-  }
+    period: "01/2017 - 08/2023",
+    description: `Led the integration of core services of the project management platform such as Power BI Embedded, 
+      Azure AD Single Sign-On (SSO), Camunda, Taskana and SalesForce CRM. 
+      Contributed to the software development of WEG's project management platform, serving over 150 accounting assistants,
+      project and contract managers. 
+      Nonetheless, helped develop other few smaller systems`,
+  },
+  {
+    title: "IT Assistant",
+    company: "Artefatos de Borrachas WOLF",
+    period: "07/2016 - 12/2016",
+    description: `Help Desk, Active Directory, and software installation support, 
+      assembling of Ethernet cables and computers repair.`,
+  },
 ];
 
 const Experience = () => {
@@ -28,7 +47,7 @@ const Experience = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           Professional Experience
         </h2>
-        
+
         <div className="space-y-6">
           {experiences.map((exp, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
