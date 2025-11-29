@@ -13,14 +13,14 @@ const Hero = () => {
             Specialized in Java & React
           </p>
         </div>
-        
+
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           Building enterprise applications with modern technologies.
           Passionate about creating reusable, performative and zero-bugs code, and making user experiences better.
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center pt-4">
-          <Button 
+          <Button
             className="group"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
@@ -50,17 +50,16 @@ const Hero = () => {
             <Linkedin className="h-6 w-6" />
           </a>
           <a
+            href="https://api.whatsapp.com/send/?phone=5547992568021&text=Ol%C3%A1+Altieri%2C+vim+atrav%C3%A9s+do+seu+portfólio%2C+teria+um+momento+para+conversarmos%3F++&type=phone_number&app_absent=0"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            <MessageCircle className="h-6 w-6" />
+          </a>
+          <a
             href="mailto:altidala@hotmail.com"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
             <Mail className="h-6 w-6" />
-          </a>
-
-          <a
-            href="https://api.whatsapp.com/send/?phone=5547992568021&text=Ol%C3%A1+Altieri%2C+vim+atrav%C3%A9s+do+seu+portfólio%2C+teria+um+momento+para+conversarmos%3F++&type=phone_number&app_absent=0"
-            className="text-muted-foreground hover:text-primary transition-colors"
-          >
-            <MessageCircle className="h-5 w-5 text-primary" />
           </a>
         </div>
       </div>
