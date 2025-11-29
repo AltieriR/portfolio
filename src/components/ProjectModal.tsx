@@ -34,8 +34,8 @@ const ProjectModal = ({ open, onOpenChange, project }: ProjectModalProps) => {
             {project.description}
           </DialogDescription>
         </DialogHeader>
-        
-        <div className="space-y-6 pt-4">
+
+        <div className="space-y-4 pt-2">
           <div>
             <h4 className="font-semibold mb-3">Technologies Used</h4>
             <div className="flex flex-wrap gap-2">
@@ -52,7 +52,7 @@ const ProjectModal = ({ open, onOpenChange, project }: ProjectModalProps) => {
 
           <div>
             {project.previewVideo && (
-              <iframe width="480" height="315"
+              <iframe title="project-video" width="100%" height="315"
                 src={project.previewVideo}>
               </iframe>
             )}
