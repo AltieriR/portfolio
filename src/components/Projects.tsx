@@ -1,7 +1,7 @@
-import { useState } from "react"; 
+import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { Search, Github } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 
 const projects = [
@@ -23,7 +23,7 @@ const projects = [
         </p>
         <Button className="w-full" asChild>
           <a href="/portfolio/orangingin-documentation.pdf" target="_blank" rel="noopener noreferrer">
-            <ExternalLink className="h-4 w-4 mr-2" />
+            <Search className="h-4 w-4 mr-2" />
             Check out the documentation
           </a>
         </Button>
@@ -33,7 +33,7 @@ const projects = [
   {
     key: "english-fluency-evaluator",
     title: "English fluency evaluator",
-    description: "Tool to evaluate english speech using Azure AI assessment service.",
+    description: "Tool for evaluating english speech using Azure AI assessment service.",
     tech: ["Java", "Spring Boot", "React", "PostgreSQL", "Docker"],
     github: "https://gitlab.com/altieri-portfolio",
     github2: null,
@@ -44,7 +44,7 @@ const projects = [
   {
     key: "portfolio",
     title: "This website",
-    description: "Portfolio created using AI tools.",
+    description: "Portfolio created while testing new AI tools.",
     tech: ["React", "TypeScript", "AI-assisted"],
     github: "https://github.com/AltieriR/portfolio",
     github2: null,
@@ -69,7 +69,7 @@ const Projects = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           Featured Projects
         </h2>
-        
+
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <Card key={project.title} className="flex flex-col hover:shadow-lg transition-shadow">
@@ -105,13 +105,13 @@ const Projects = () => {
                       </a>
                     </Button>
                   )}
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     size="sm"
                     onClick={() => handleDemoClick(project)}
                   >
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Demo
+                    <Search className="h-4 w-4 mr-2" />
+                    More details
                   </Button>
                 </div>
               </CardContent>
