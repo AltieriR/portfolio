@@ -3,10 +3,10 @@ import { Card } from "@/components/ui/card";
 const skills = {
   "Backend": ["Java", "Spring Boot/Framework", "REST APIs", "SOAP", "OracleSQL", "PostgreSQL", "MongoDB", "Java EE", "JSP", "Logging"],
   "Frontend": ["React", "JavaScript", "NPM", "ESBuild", "React Context/Redux", "ECMAScript 8+/CSS Modules", "Bootstrap"],
-  "DevOps": ["Docker", "CI/CD", "Git", "Maven", "Elastic ELK", "Grafana (Prometheus)", "Hostinger", "AWS", "NGinx", "LDAP", "Spring Security/OAuth2"],
-  "Testing": ["JUnit", "Jest", "React Testing Library", "Selenium", "Cypress"],
+  "DevOps": ["Docker", "CI/CD", "Git", "Maven", "Elastic ELK", "Grafana (Prometheus)", "Hostinger", "AWS", "Nginx", "LDAP", "Spring Security/OAuth2"],
+  "Testing": ["JUnit", "Jest", "React Testing Library", "WireMock", "SoapUI Testing", "H2"],
   "Quality Assurance": ["SonarLint/Qube", "ESLint", "Postman/Insomnia/SwaggerUI/SoapUI"],
-  "Project methodologies": ["Scrum", "Kanban"]
+  "Project related": ["Scrum", "Kanban", "Jira", "Trello"]
 };
 
 const Skills = () => {
@@ -16,7 +16,7 @@ const Skills = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           Technical Expertise
         </h2>
-        
+
         <div className="grid md:grid-cols-2 gap-6">
           {Object.entries(skills).map(([category, items]) => (
             <Card key={category} className="p-6 hover:shadow-lg transition-shadow">
