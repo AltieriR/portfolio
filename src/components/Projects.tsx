@@ -21,7 +21,7 @@ const projects = [
           and built-in timer (no background throttling).
         </p>
         <Button className="w-full" asChild>
-          <a href="/oranging/documentation" target="_blank" rel="noopener noreferrer">
+          <a href="/portfolio/orangingin-documentation.pdf" target="_blank" rel="noopener noreferrer">
             <ExternalLink className="h-4 w-4 mr-2" />
             Check out the documentation
           </a>
