@@ -6,25 +6,48 @@ import ProjectModal from "./ProjectModal";
 
 const projects = [
   {
-    title: "English fluency evaluator",
-    description: "Tool to evaluate english speech using Azure AI assessment service.",
-    tech: ["Java", "Spring Boot", "React", "PostgreSQL", "Docker"],
-    github: "#",
-    demo: "#"
-  },
-  {
+    key: "orangingin",
     title: "Orangingin - Illustration training in one tool",
     description: "Platform for searching images, creating and getting feedback of your illustration training.",
     tech: ["Java", "Spring Boot", "React", "PostgreSQL", "Live chat messaging"],
     github: "https://gitlab.com/oranging",
-    demo: "#"
+    demo: "#",
+    previewVideo: "https://youtube.com/embed/gi6cv6N_4K8",
+    projectHighlight: (
+      <div>
+        <p className="mb-2">
+          This project has multiple features including: search of images using external APIs (with rate limit control),
+          realtime chat, image storage into AWS s3, login with email confirmation
+          and built-in timer (no background throttling).
+        </p>
+        <Button className="w-full" asChild>
+          <a href="/oranging/documentation" target="_blank" rel="noopener noreferrer">
+            <ExternalLink className="h-4 w-4 mr-2" />
+            Check out the documentation
+          </a>
+        </Button>
+      </div>
+    )
   },
   {
+    key: "english-fluency-evaluator",
+    title: "English fluency evaluator",
+    description: "Tool to evaluate english speech using Azure AI assessment service.",
+    tech: ["Java", "Spring Boot", "React", "PostgreSQL", "Docker"],
+    github: "#",
+    demo: "#",
+    previewVideo: null,
+    projectHighlight: null
+  },
+  {
+    key: "portfolio",
     title: "This website",
     description: "Portfolio created using AI tools.",
     tech: ["React", "TypeScript", "AI-assisted"],
     github: "https://github.com/AltieriR/portfolio",
-    demo: "https://altierir.github.io/portfolio"
+    demo: "https://altierir.github.io/portfolio",
+    previewVideo: null,
+    projectHighlight: null
   }
 ];
 

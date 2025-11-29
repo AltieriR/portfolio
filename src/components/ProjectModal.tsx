@@ -7,15 +7,20 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import type { ReactNode } from "react";
 
 interface ProjectModalProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   project: {
+    key: string;
     title: string;
     description: string;
     tech: string[];
+    github: string;
     demo: string;
+    previewVideo: string | null;
+    projectHighlight?: ReactNode | null;
   };
 }
 
@@ -44,22 +49,23 @@ const ProjectModal = ({ open, onOpenChange, project }: ProjectModalProps) => {
               ))}
             </div>
           </div>
-          
-          <div>
-            <h4 className="font-semibold mb-3">Key Features</h4>
-            <ul className="space-y-2 text-muted-foreground">
-              <li>• Fully working tool</li>
-              <li>• Responsive design across all devices</li>
-              <li>• Integration testing coverage</li>
-            </ul>
-          </div>
 
           <div>
+            {project.previewVideo && (
+              <iframe width="420" height="315"
+                src={project.previewVideo}>
+              </iframe>
+            )}
+            
             <h4 className="font-semibold mb-3">Project Highlights</h4>
-            <p className="text-muted-foreground">
-              This project demonstrates advanced full-stack development capabilities,
-              and modern tools use.
-            </p>
+            {project.projectHighlight ? (
+              project.projectHighlight
+            ) : (
+              <p className="text-muted-foreground">
+                This project demonstrates advanced full-stack development capabilities,
+                and modern tools use.
+              </p>
+            )}
           </div>
         </div>
       </DialogContent>
