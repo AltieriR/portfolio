@@ -60,7 +60,7 @@ const Contact = () => {
                 <div>
                   <p className="font-medium">Whatsapp</p>
                   <a href="https://api.whatsapp.com/send/?phone=5547992568021&text=Ol%C3%A1+Altieri%2C+vim+atrav%C3%A9s+do+seu+portfólio%2C+teria+um+momento+para+conversarmos%3F++&type=phone_number&app_absent=0"
-				    className="text-muted-foreground hover:text-primary transition-colors">
+                    className="text-muted-foreground hover:text-primary transition-colors">
                     +55 (47) 99256-8021
                   </a>
                 </div>
@@ -69,8 +69,8 @@ const Contact = () => {
 
             <Button className="w-full" asChild>
               <a href="https://api.whatsapp.com/send/?phone=5547992568021&text=Ol%C3%A1+Altieri%2C+vim+atrav%C3%A9s+do+seu+portfólio%2C+teria+um+momento+para+conversarmos%3F++&type=phone_number&app_absent=0">
-			    Send Message
-			  </a>
+                Send Message
+              </a>
             </Button>
           </CardContent>
         </Card>

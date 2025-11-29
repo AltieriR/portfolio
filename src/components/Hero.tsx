@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -54,6 +54,13 @@ const Hero = () => {
             className="text-muted-foreground hover:text-primary transition-colors"
           >
             <Mail className="h-6 w-6" />
+          </a>
+
+          <a
+            href="https://api.whatsapp.com/send/?phone=5547992568021&text=Ol%C3%A1+Altieri%2C+vim+atrav%C3%A9s+do+seu+portfólio%2C+teria+um+momento+para+conversarmos%3F++&type=phone_number&app_absent=0"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            <MessageCircle className="h-5 w-5 text-primary" />
           </a>
         </div>
       </div>
