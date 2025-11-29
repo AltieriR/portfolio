@@ -14,8 +14,8 @@ const projects = [
     demo: "#",
     previewVideo: "https://youtube.com/embed/gi6cv6N_4K8",
     projectHighlight: (
-      <div>
-        <p className="mb-2">
+      <>
+        <p className="mb-4">
           This project has multiple features including: search of images using external APIs (with rate limit control),
           realtime chat, image storage into AWS s3, login with email confirmation
           and built-in timer (no background throttling).
@@ -26,7 +26,7 @@ const projects = [
             Check out the documentation
           </a>
         </Button>
-      </div>
+      </>
     )
   },
   {

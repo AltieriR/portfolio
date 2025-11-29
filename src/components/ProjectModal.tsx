@@ -52,21 +52,21 @@ const ProjectModal = ({ open, onOpenChange, project }: ProjectModalProps) => {
 
           <div>
             {project.previewVideo && (
-              <iframe width="420" height="315"
+              <iframe width="480" height="315"
                 src={project.previewVideo}>
               </iframe>
             )}
-            
-            <h4 className="font-semibold mb-3">Project Highlights</h4>
-            {project.projectHighlight ? (
-              project.projectHighlight
-            ) : (
-              <p className="text-muted-foreground">
-                This project demonstrates advanced full-stack development capabilities,
-                and modern tools use.
-              </p>
-            )}
           </div>
+          <h4 className="font-semibold mt-2 mb-3">Project Highlights</h4>
+
+          {project.projectHighlight ? (
+            project.projectHighlight
+          ) : (
+            <p className="text-muted-foreground">
+              This project demonstrates advanced full-stack development capabilities,
+              and modern tools use.
+            </p>
+          )}
         </div>
       </DialogContent>
     </Dialog>
