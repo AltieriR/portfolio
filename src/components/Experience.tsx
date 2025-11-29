@@ -5,7 +5,7 @@ const experiences = [
     title: "Senior Full-Stack Developer",
     company: "Pitedu",
     period: "02/2025 - Present",
-    description: "Developed tools to make english learning easier."
+    description: "Led the learning platform development, as well as the integrations."
   },
   {
     title: "Full-Stack Developer",
@@ -19,7 +19,7 @@ const experiences = [
     title: "Online Shopper in Australia",
     company: "Woolworths Sydney",
     period: "02/2024 - 07/2024",
-    description: "IT non-related // Personal shopping for Woolies customers.",
+    description: "non-IT related // Personal shopping for Woolies customers.",
   },
   {
     title: "Full-Stack Developer",
