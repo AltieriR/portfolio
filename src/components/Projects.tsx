@@ -10,7 +10,8 @@ const projects = [
     title: "Orangingin - Illustration training in one tool",
     description: "Platform for searching images, creating and getting feedback of your illustration training.",
     tech: ["Java", "Spring Boot", "React", "PostgreSQL", "Live chat messaging"],
-    github: "https://gitlab.com/oranging",
+    github: "https://gitlab.com/altieri-portfolio/orangingin-backend",
+    github2: "https://gitlab.com/oranging/web-frontend",
     demo: "#",
     previewVideo: "https://youtube.com/embed/gi6cv6N_4K8",
     projectHighlight: (
@@ -34,7 +35,8 @@ const projects = [
     title: "English fluency evaluator",
     description: "Tool to evaluate english speech using Azure AI assessment service.",
     tech: ["Java", "Spring Boot", "React", "PostgreSQL", "Docker"],
-    github: "#",
+    github: "https://gitlab.com/altieri-portfolio",
+    github2: null,
     demo: "#",
     previewVideo: null,
     projectHighlight: null
@@ -45,6 +47,7 @@ const projects = [
     description: "Portfolio created using AI tools.",
     tech: ["React", "TypeScript", "AI-assisted"],
     github: "https://github.com/AltieriR/portfolio",
+    github2: null,
     demo: "https://altierir.github.io/portfolio",
     previewVideo: null,
     projectHighlight: null
@@ -94,6 +97,14 @@ const Projects = () => {
                       Code
                     </a>
                   </Button>
+                  {project.github2 && (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.github2} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4 mr-2" />
+                        Frontend code
+                      </a>
+                    </Button>
+                  )}
                   <Button 
                     variant="outline" 
                     size="sm"
