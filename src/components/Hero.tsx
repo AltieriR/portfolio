@@ -16,7 +16,7 @@ const Hero = () => {
 
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           Building enterprise applications with modern technologies.
-          Passionate about creating reusable, performative and zero-bugs code, and making user experiences better.
+          Passionate about creating reusable, high-performance, bug-free code and making the user experience better.
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center pt-4">
